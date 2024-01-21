@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Felder"
+  given-names: "Benjamin"
+title: "MERLIn - Modular Extensible Reinforcement Learning Interface"
+version: 1.2.0
+date-released: 2023-09-09
+url: "https://github.com/pykong/merlin"
