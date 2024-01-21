@@ -1,0 +1,118 @@
+<head>
+    <title>WeatherWiz</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@scalableminds/chatroom@0.12.0/dist/Chatroom.min.css" />
+</head>
+<body>
+    <div class="svg-background-container"></div>
+    <div id="center-box">
+        <img class="header" src="img/header.png" />
+        <div class="chat-container"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@scalableminds/chatroom@0.12.0/dist/Chatroom.min.js"></script>
+    <script type="text/javascript">
+        const chatroom = new window.Chatroom({
+            host: "http://localhost:5005",
+            title: "Talk to WeatherWiz",
+            container: document.querySelector(".chat-container"),
+            welcomeMessage: "Hi, I am WeatherWiz. Ask me anything about the weather!",
+            speechRecognition: "en-US",
+            voiceLang: "en-US"
+        });
+        chatroom.openChat();
+    </script>
+<style>
+    body {
+        overflow: hidden;
+        background-color: #FEF9EC;
+    }
+
+    .svg-background-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .svg-background-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('img/icon_grid.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        opacity: 0.1;
+        z-index: -1;
+    }
+
+    #center-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 95vh;
+        min-width: 800px;
+        max-width: 1200px;
+        z-index: 1;
+    }
+    .header {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .chat-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+    }
+    .chatroom.open {
+        height: 100%;
+        width: 100%;
+    }
+    .chats {
+        background-color: #ECFAFD !important;
+        overflow-y: auto !important;
+    }
+    .chatroom.open h3 {
+        font-size: 32px !important;
+        padding: 2px;
+    }
+    .chat {
+        font-size: 32px !important;
+    }
+    .chat.left {
+        background-color: #D9CDDF !important;
+    }
+    .chat.right {
+        background-color: #EFFBDA !important;
+    }
+    .time {
+        font-size: 26px !important;
+        font-style: italic;
+    }
+
+    .input {
+        height: 50px;
+    }
+
+     input[type="text"] {
+        font-size: 28px !important;
+    }
+
+    input[type="submit"] {
+        font-size: 24px !important;
+    }
+</style>
+</body>

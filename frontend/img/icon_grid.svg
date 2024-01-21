@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="1440"
+   height="560"
+   preserveAspectRatio="none"
+   viewBox="0 0 1440 560"
+   id="svg62"
+   sodipodi:docname="icon_grid.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview62"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.37948082"
+     inkscape:cx="690.41698"
+     inkscape:cy="476.96746"
+     inkscape:window-width="1920"
+     inkscape:window-height="997"
+     inkscape:window-x="933"
+     inkscape:window-y="1640"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg62" />
+  <g
+     mask="url(&quot;#SvgjsMask2727&quot;)"
+     fill="none"
+     id="g2"
+     style="fill:#f2f2f2">
+    <use
+       xlink:href="#SvgjsG2735"
+       transform="translate(0, 0)"
+       fill="rgba(95, 107, 119, 1)"
+       id="use1"
+       style="fill:#f2f2f2" />
+    <use
+       xlink:href="#SvgjsG2735"
+       transform="translate(1170, 0)"
+       fill="rgba(95, 107, 119, 1)"
+       id="use2"
+       style="fill:#f2f2f2" />
+  </g>
+  <defs
+     id="defs62">
+    <mask
+       id="SvgjsMask2727">
+      <rect
+         width="1440"
+         height="560"
+         fill="#ffffff"
+         id="rect2" />
+    </mask>
+    <g
+       id="SvgjsG2732">
+      <path
+         d="M3.474 10.969C3.474 7.665 8.077 0.361 8.077 0.361s4.602 7.305 4.602 10.608c0 2.247-1.506 4.771-4.602 4.771-3.095 0-4.603-2.524-4.603-4.771z"
+         fill-rule="evenodd"
+         id="path2" />
+    </g>
+    <g
+       id="SvgjsG2733">
+      <path
+         d="M2.524 8.637H0.014V7.308h2.51v1.329zM3.656 4.576L1.884 2.804l0.935-0.935 1.772 1.772-0.935 0.935z m0 6.817l0.935 0.935-1.772 1.773-0.934-0.936 1.771-1.772z m4.997-8.884h-1.33V-0.002h1.33v2.511z m-1.33 10.952h1.33v2.51h-1.33v-2.509zM12.344 4.576l-0.96-0.935 1.796-1.772 0.935 0.935-1.772 1.772z m0 6.792l1.771 1.797-0.935 0.936-1.771-1.774 0.936-0.96z m3.643-4.06v1.329h-2.51V7.308h2.509z"
+         id="path3" />
+      <path
+         d="M3.702 7.984a4.184 4.184 0 1 0 8.368 0 4.184 4.184 0 1 0-8.368 0"
+         id="path4" />
+    </g>
+    <g
+       id="SvgjsG2730">
+      <path
+         d="M0 10.392a3.585 3.585 0 1 0 7.169 0 3.585 3.585 0 1 0-7.169 0"
+         id="path5" />
+      <path
+         d="M7.997 9.975a4.001 4.001 0 1 0 8.003 0 4.001 4.001 0 1 0-8.003 0"
+         id="path6" />
+      <path
+         d="M2.655 7.156a5.054 5.054 0 1 0 10.108 0 5.054 5.054 0 1 0-10.108 0"
+         id="path7" />
+      <path
+         d="M3.585 7.983H12.5v5.993H3.585z"
+         id="path8" />
+    </g>
+    <g
+       id="SvgjsG2729">
+      <path
+         d="M6.846 8.046l0.633 0.934h1.178l0.544-0.934-0.573-0.995h-1.181l-0.601 0.995zM7.331 15.562V13.449l-1.181 0.664-0.601-0.345V13.024l1.751-0.995V10.64l-1.271 0.816v-1.471l-1.214 0.7v1.994l-0.664 0.412-0.561-0.372V11.382L1.747 12.422 0.96 12.091V11.248l1.934-1.058-1.21-0.608v-0.771l0.687-0.376 1.735 1.022 1.206-0.696-0.03-0.022-1.232-0.707 1.197-0.742-1.201-0.696L2.311 7.614l-0.651-0.324v-0.769l1.174-0.66L0.96 4.844v-0.844l0.72-0.371 1.847 1.067v-1.36l0.557-0.375 0.682 0.393-0.004 2.035 1.241 0.709-0.005-1.438 1.301 0.7v-1.388L5.549 2.974v-0.738l0.601-0.348 1.181 0.664V0.443L8.006 0l0.682 0.443v2.109l1.224-0.678 0.615 0.407v0.664L8.715 3.972v1.388l1.239-0.755v1.511l1.277-0.696v-2.176l0.615-0.286 0.646 0.286v1.392l1.901-1.027 0.664 0.405v0.787l-1.856 1.055 1.161 0.651v0.751L13.76 7.592l-1.782-1.053-1.232 0.782 1.192 0.743-1.228 0.706 1.268 0.664L13.76 8.439l0.572 0.405v0.718L13.214 10.19l1.781 1.058v0.83l-0.754 0.344-1.749-0.995v1.317l-0.628 0.351-0.615-0.351V10.745l-1.295-0.737v1.388L8.715 10.64v1.389L10.466 13.024v0.787l-0.605 0.302-1.173-0.664v2.113L8.006 16l-0.675-0.438z"
+         id="path9" />
+    </g>
+    <g
+       id="SvgjsG2728">
+      <path
+         d="M14.232 5.485L6.361 15.96l1.815-7.368-4.222 0.071L5.679 0h5.121L8.744 5.489z"
+         id="path10" />
+    </g>
+    <g
+       id="SvgjsG2734">
+      <path
+         d="M1.12 8.836c1.001-1.179 2.827-2.005 4.388-1.743 0.174-2.151-0.071-4.156 1-6.133C3.189 1.173 1.648 6.247 1.12 8.836M12.892 5.07c0.697-0.83 2.347-1.253 3.213-0.476C13.849 1.44 11.058-0.583 7.086 0.764c3.102 0.942 5.276 3.84 5.805 4.306"
+         id="path11" />
+      <path
+         d="M12.267 5.198C11.182 3.684 7.769 1.266 7.019 1.417c-0.8 0.16-1.022 4.702-0.95 5.676 0.475-0.892 1.202-1.564 2.045-1.984l3.461 9.423 0.475-0.12-3.494-9.493c1.156-0.427 2.484-0.391 3.712 0.279"
+         id="path12" />
+    </g>
+    <g
+       id="SvgjsG2731">
+      <path
+         d="M8 1.076C3.594 1.076 0.023 3.767 0.023 7.088c0 1.625 0.857 3.099 2.248 4.181l0.003 3.607 4.168-1.892c0.504 0.075 1.025 0.115 1.558 0.116 4.406 0 7.976-2.692 7.976-6.012C15.976 3.767 12.406 1.076 8 1.076z"
+         fill-rule="evenodd"
+         id="path13" />
+    </g>
+    <g
+       id="SvgjsG2735">
+      <use
+         xlink:href="#SvgjsG2728"
+         transform="translate(0, 0) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use13" />
+      <use
+         xlink:href="#SvgjsG2729"
+         transform="translate(0, 117) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use14" />
+      <use
+         xlink:href="#SvgjsG2729"
+         transform="translate(0, 234) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use15" />
+      <use
+         xlink:href="#SvgjsG2730"
+         transform="translate(0, 351) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use16" />
+      <use
+         xlink:href="#SvgjsG2729"
+         transform="translate(0, 468) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use17" />
+      <use
+         xlink:href="#SvgjsG2728"
+         transform="translate(117, 0) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use18" />
+      <use
+         xlink:href="#SvgjsG2728"
+         transform="translate(117, 117) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use19" />
+      <use
+         xlink:href="#SvgjsG2731"
+         transform="translate(117, 234) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use20" />
+      <use
+         xlink:href="#SvgjsG2730"
+         transform="translate(117, 351) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use21" />
+      <use
+         xlink:href="#SvgjsG2730"
+         transform="translate(117, 468) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use22" />
+      <use
+         xlink:href="#SvgjsG2731"
+         transform="translate(234, 0) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use23" />
+      <use
+         xlink:href="#SvgjsG2730"
+         transform="translate(234, 117) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use24" />
+      <use
+         xlink:href="#SvgjsG2732"
+         transform="translate(234, 234) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use25" />
+      <use
+         xlink:href="#SvgjsG2733"
+         transform="translate(234, 351) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use26" />
+      <use
+         xlink:href="#SvgjsG2734"
+         transform="translate(234, 468) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use27" />
+      <use
+         xlink:href="#SvgjsG2734"
+         transform="translate(351, 0) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use28" />
+      <use
+         xlink:href="#SvgjsG2731"
+         transform="translate(351, 117) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use29" />
+      <use
+         xlink:href="#SvgjsG2729"
+         transform="translate(351, 234) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use30" />
+      <use
+         xlink:href="#SvgjsG2734"
+         transform="translate(351, 351) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use31" />
+      <use
+         xlink:href="#SvgjsG2734"
+         transform="translate(351, 468) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use32" />
+      <use
+         xlink:href="#SvgjsG2729"
+         transform="translate(468, 0) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use33" />
+      <use
+         xlink:href="#SvgjsG2732"
+         transform="translate(468, 117) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use34" />
+      <use
+         xlink:href="#SvgjsG2728"
+         transform="translate(468, 234) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use35" />
+      <use
+         xlink:href="#SvgjsG2733"
+         transform="translate(468, 351) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use36" />
+      <use
+         xlink:href="#SvgjsG2734"
+         transform="translate(468, 468) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use37" />
+      <use
+         xlink:href="#SvgjsG2734"
+         transform="translate(585, 0) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use38" />
+      <use
+         xlink:href="#SvgjsG2730"
+         transform="translate(585, 117) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use39" />
+      <use
+         xlink:href="#SvgjsG2729"
+         transform="translate(585, 234) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use40" />
+      <use
+         xlink:href="#SvgjsG2728"
+         transform="translate(585, 351) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use41" />
+      <use
+         xlink:href="#SvgjsG2730"
+         transform="translate(585, 468) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use42" />
+      <use
+         xlink:href="#SvgjsG2730"
+         transform="translate(702, 0) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use43" />
+      <use
+         xlink:href="#SvgjsG2733"
+         transform="translate(702, 117) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use44" />
+      <use
+         xlink:href="#SvgjsG2734"
+         transform="translate(702, 234) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use45" />
+      <use
+         xlink:href="#SvgjsG2729"
+         transform="translate(702, 351) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use46" />
+      <use
+         xlink:href="#SvgjsG2732"
+         transform="translate(702, 468) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use47" />
+      <use
+         xlink:href="#SvgjsG2732"
+         transform="translate(819, 0) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use48" />
+      <use
+         xlink:href="#SvgjsG2728"
+         transform="translate(819, 117) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use49" />
+      <use
+         xlink:href="#SvgjsG2733"
+         transform="translate(819, 234) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use50" />
+      <use
+         xlink:href="#SvgjsG2734"
+         transform="translate(819, 351) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use51" />
+      <use
+         xlink:href="#SvgjsG2732"
+         transform="translate(819, 468) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use52" />
+      <use
+         xlink:href="#SvgjsG2732"
+         transform="translate(936, 0) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use53" />
+      <use
+         xlink:href="#SvgjsG2733"
+         transform="translate(936, 117) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use54" />
+      <use
+         xlink:href="#SvgjsG2731"
+         transform="translate(936, 234) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use55" />
+      <use
+         xlink:href="#SvgjsG2731"
+         transform="translate(936, 351) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use56" />
+      <use
+         xlink:href="#SvgjsG2732"
+         transform="translate(936, 468) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use57" />
+      <use
+         xlink:href="#SvgjsG2730"
+         transform="translate(1053, 0) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use58" />
+      <use
+         xlink:href="#SvgjsG2733"
+         transform="translate(1053, 117) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use59" />
+      <use
+         xlink:href="#SvgjsG2734"
+         transform="translate(1053, 234) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use60" />
+      <use
+         xlink:href="#SvgjsG2733"
+         transform="translate(1053, 351) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use61" />
+      <use
+         xlink:href="#SvgjsG2732"
+         transform="translate(1053, 468) scale(3)"
+         fill="rgba(95, 107, 119, 1)"
+         id="use62" />
+    </g>
+  </defs>
+</svg>

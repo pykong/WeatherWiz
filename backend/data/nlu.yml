@@ -1,0 +1,484 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - thx
+    - thank you very much
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_condition
+  examples: |
+    - Could you update me on today's weather?
+    - What is the weather forecast for [this weekend](datetime)?
+    - I'd like to know the weather for [this evening](datetime).
+    - Is it going to be nice outside today?
+    - What should I expect from the weather on my trip [tomorrow](datetime)?
+    - What does the weather look like today?
+    - Can I get the weather report for [this afternoon](datetime)?
+    - What's the forecast for this week?
+    - Is it a good day for a picnic?
+    - Should I expect rain or shine today?
+    - Is it going to be hot or cold today?
+    - What kind of weather are we having this [this weekend](datetime)?
+    - Will it be pleasant outside [tomorrow](datetime)?
+    - Can you provide today's weather summary?
+    - I need the forecast for the next [seven days](datetime)..
+    - What's the weather outlook for tonight?
+    - Is today's weather suitable for a beach day?
+    - How's the weather shaping up for our game [tomorrow](datetime)?
+    - Will it be safe to travel in this weather?
+    - Is it a good day for gardening?
+    - What's the weather prediction for my city today?
+    - Do I need to prepare for any severe weather today?
+    - How comfortable will the weather be for a hike?
+    - Is the weather favorable for fishing today?
+    - Can you tell me if it's a good day for cycling?
+    - Does the sun shine in [Hamburg](place)?
+    - Will the weather be friendly in (Nuremberg)[place] next week?
+    - Is it going to be a sunny day in [Munich](place) [tomorrow](datetime)?
+    - Is it going to be a rainy day in [Frankfurt](place) [tomorrow](datetime)?
+    - Will it be a cloudy in [Stuttgart](place) [next Friday](datetime)?
+    - Can you inform me about the outdoor conditions for [today](datetime)?
+    - Is it suitable for a day at the park [this weekend](datetime)?
+    - Can you give me an update on the atmospheric conditions for [today](datetime)?
+    - What kind of day is it shaping up to be?
+    - Is the day shaping up to be bright or gloomy?
+    - What's the overall ambiance outside right now?
+    - Is it advisable to plan outdoor activities [this weekend](datetime)?
+    - How conducive is the environment for a hike [this morning](datetime)?
+    - What's the outlook for a camping trip [this weekend](datetime)?
+    - Is it ideal for a day out in the city [today](datetime)?
+    - Will the surroundings be comfortable for outdoor dining [tonight](datetime)?
+    - Is it a day to enjoy the outdoors or to stay inside?
+    - What's the condition for an early morning run [tomorrow](datetime)?
+    - Can you provide a brief on the day's environmental conditions?
+    - Is it a good day for an outdoor wedding?
+    - How are the day's conditions for a road trip?
+    - Should I plan for a cozy day indoors or a lively day outdoors?
+    - Is it a good day to take my dog for a long walk in the park?
+    - How's the day looking for a game of golf?
+    - Are we looking at clear or cloudy skies [this evening](datetime)?
+    - Is it a good day for sunbathing at the beach?
+    - Should I expect a change in the atmospheric mood [later today](datetime)?
+    - Will the day be favorable for planting in my garden?
+    - Is it a comfortable day for an outdoor photoshoot?
+    - Can I expect a bright or a dark day?
+    - How's the day shaping up for a visit to the zoo?
+    - Will the conditions be right for a street festival?
+    - Is it a good day for a long bike ride?
+    - Is the day suitable for an outdoor painting session?
+    - How are the conditions for a picnic by the lake?
+    - Is it a good day for a scenic drive in the countryside?
+    - Will the day's conditions be favorable for a city tour?
+    - How's the weather for an outdoor market [this afternoon](datetime)?
+    - Is it a suitable day for a walk in the botanical gardens?
+    - What's the condition for a rooftop party [tonight](datetime)?
+    - How's the weather shaping up for an outdoor concert?
+    - Will the conditions be right for a day at the theme park?
+    - Is it a good day to enjoy nature in the forest?
+    - What's the atmosphere like for a day on the beach?
+    - Are we looking at a day perfect for a barbecue?
+    - How are the conditions for a sports event [this afternoon](datetime)?
+    - Is it a good day to plan an outdoor adventure?
+    - How's the day for a picnic in the park?
+    - Will the conditions be suitable for a morning run?
+    - Is it a good day for gardening?
+    - What's the weather like for a day of sightseeing?
+    - Are we looking at a good day for an outdoor photoshoot?
+    - Is it a suitable day for a beach volleyball game?
+    - How's the day for an outdoor yoga session?
+
+- intent: ask_temperature
+  examples: |
+    - Can you inform me about today's high and low climate conditions?
+    - Will this afternoon be warm enough for a picnic?
+    - Do I need to prepare for freezing conditions this morning?
+    - What are the climate expectations for the next several hours?
+    - Is today's peak warmth higher than yesterday's?
+    - Will tonight be colder compared to last night?
+    - Can you predict the chill factor for my evening run?
+    - Is it a good idea to wear shorts later today?
+    - How does the current climate compare with yesterday at the same time?
+    - Should I expect a frosty start tomorrow morning?
+    - Do I need to bundle up for my early morning jog [tomorrow](datetime)?
+    - Is today warmer than what's usual for [this season](datetime)?
+    - Can you give me an idea of the expected chill for [tonight](datetime) in Munich?
+    - Is it currently below [10 degrees Celsius](temperature)?
+    - Is a jacket necessary for my lunch break walk [today](datetime)?
+    - How's the climate looking for an outdoor movie [tonight](datetime)?
+    - Are conditions favorable for a beach day?
+    - Is it too brisk this morning for an outdoor yoga session?
+    - Is the evening cool enough for stargazing?
+    - Will the afternoon heat affect my plans for a bike ride?
+    - How likely is a heatwave to disrupt my travel plans [today](datetime)?
+    - Is it safe for my pets to be outside in today's heat?
+    - Will the evening be pleasant for rooftop dining?
+    - Is it a good day for ice cream sales in the park?
+    - Will the morning-to-noon temperature shift affect my outdoor plans?
+    - How's the climate for a street food tour right now?
+    - Will it be cool enough tonight for a bonfire?
+    - How will today's warmth impact road conditions?
+    - Is the morning chill right for a hot air balloon ride?
+    - Should I consider a jacket for a sunset sail?
+    - Can I expect a comfortable climate for a drive-in theater experience?
+    - Is it too warm today for safely transporting my pets?
+    - How will the early morning chill affect my fishing trip?
+    - What's the climate forecast for an upcoming outdoor concert?
+    - Will the evening be warm enough for a long walk in the forest?
+    - Will the evening be brisk enough for a cozy campfire?
+    - Is this afternoon going to be too sultry for a beach volleyball match?
+    - Should I expect icy roads on my drive to work tomorrow morning?
+    - Is the weather right now suitable for an ice-cream outing?
+    - Will the morning frost affect my commute?
+    - How comfy will it be for a hike in the hills [this weekend](datetime)?
+    - Will it be balmy enough for night-time star gazing?
+    - Should I prepare for sweltering heat at the marathon [next Sunday](datetime)?
+    - Is the climate favorable for a day-long outdoor workshop?
+    - How's the weather for a midday soccer game?
+    - Can I expect a temperate evening for my book club meetup outside?
+    - Is it pleasant enough for a day in the botanical gardens?
+    - Will the early morning chill affect my golf game?
+    - Is it too breezy for sailing on the lake today?
+    - How's the weather looking for an outdoor birthday party [this afternoon](datetime)?
+    - Can we expect comfortable weather for a countryside drive [this weekend](datetime)?
+    - Is it too brisk for a morning swim in the ocean?
+    - How will today's weather affect an outdoor art exhibit?
+    - Is it a good day for a picnic in the mountains?
+    - Will the afternoon heat impact my plans for gardening?
+    - Is the evening cool enough for an outdoor film festival?
+    - How suitable is the weather for a day at the theme park?
+    - Will the morning sunshine be too intense for a tennis match?
+    - Is it ideal weather for a marathon training session [today](datetime)?
+    - Can I expect a mild afternoon for my outdoor photography class?
+    - How's the weather for a day of street photography?
+    - Is it a good day for an al fresco dining experience?
+    - Will today's sunshine be strong enough for solar cooking experiments?
+    - Is the climate mild enough for a marathon this weekend?
+    - Is it cool enough for a day out at the wildlife sanctuary?
+    - Is it pleasant for a rooftop brunch right now?
+    - Should I plan for a warm outfit for tonight's open-air concert?
+    - Is the early morning chill right for bird watching today?
+    - Is it too humid for a day of hiking in the forest?
+    - How's the weather for a riverside camping trip [this weekend](datetime)?
+    - Will it be too hot for an outdoor cooking class [this afternoon](datetime)?
+    - Is the afternoon heat suitable for a street dance competition?
+    - Will it be cool enough for an evening jazz festival in the park?
+    - Is it the right climate for a day at the adventure park?
+    - Is the evening cool enough for a night market visit?
+    - How's the weather looking for a charity walk [tomorrow](datetime)?
+    - Will the morning chill affect the farmer's market?
+    - Will the heat today be too much for a rooftop gathering?
+    - Is it chilly enough for an ice sculpture event this afternoon?
+    - How's the weather for an outdoor pottery class?
+    - Can I expect a warm evening for a beach barbecue?
+    - Is it a good day for a sunbathing session at the park?
+    - Will the morning cold affect my plans for a fishing trip?
+    - Is it too hot for a skateboarding session in the city?
+    - Will the temperature be okay for an outdoor pet adoption event?
+    - How's the climate for a day-long music festival outdoors?
+    - Is it a comfortable day for a historical walking tour?
+    - Is it a good day for a road trip to the countryside?
+    - Can I expect a cool evening for an outdoor movie night?
+    - Will the temperature be right for a day at the botanical garden?
+    - Is it too warm for a baking contest outdoors?
+    - Will the afternoon heat affect my plans for a bike rally?
+    - Can I expect a mild night for camping under the stars?
+    - Is it a comfortable climate for a day of golf?
+    - Will it be too chilly for an evening boat ride?
+    - Can I expect a warm afternoon for a picnic in the park?
+    - Will the evening be cool enough for an outdoor culinary event?
+
+- intent: ask_rain
+  examples: |
+    - Are there any chances of a thunderstorm today?
+    - Will the weather be clear for the outdoor event [tonight](datetime)?
+    - Do I need an umbrella for today?
+    - Are we expecting foggy conditions this [morning](datetime)?
+    - Tell me if it's going to be humid today.
+    - Is the sky clear today?
+    - Will we see any sunshine this [morning](datetime)?
+    - Are there clouds expected later today?
+    - Is it going to be foggy [tomorrow morning](datetime)?
+    - Can I expect clear skies [tonight](datetime)?
+    - Will there be a chance of a storm today?
+    - Is today less humid than yesterday?
+    - Are we expecting overcast conditions?
+    - Is there a likelihood of hail today?
+    - Will the weather be dry or wet today?
+    - Are there any signs of a heatwave?
+    - Is it likely to be misty in the [morning](datetime)?
+    - Will it be a cloudy evening?
+    - Are sunny intervals expected today?
+    - Is the humidity going to be high today?
+    - Are we expecting any extreme weather conditions?
+    - Will the weather be calm or turbulent?
+    - Is it clear enough for stargazing [tonight](datetime)?
+    - Are we looking at a sunny or a gloomy day?
+    - Is there any chance of a rainbow today?
+    - Will the weather be stormy in [Berlin](place) [tomorrow](datetime)?
+    - Can I expect dew on the grass for my early morning photography?
+    - Is there a possibility of getting drenched today?
+    - Should I plan indoor activities due to wet weather?
+    - Will my garden be watered naturally tonight?
+    - Are we expecting damp conditions this afternoon?
+    - Can I leave my windows open, or will it get splashy?
+    - Is it safe to schedule a picnic without expecting interruptions from the sky?
+    - Will the plants need watering, or is nature taking care of it?
+    - Do we need to worry about waterlogged streets today?
+    - Should I pack waterproof gear for my hike?
+    - Are the clouds looking threatening this evening?
+    - Is there a chance of precipitation during my morning run?
+    - Will my outdoor plans be ruined by wet surprises?
+    - Is the air feeling moist enough to suggest a downpour?
+    - Should I expect to see puddles on my way to work?
+    - Are we expecting any drizzles this [morning](datetime)?
+    - Will there be droplets to accompany my evening walk?
+    - Is it advisable to carry a raincoat today?
+    - Will there be any need for windshield wipers while driving [today](datetime)?
+    - Should I expect to hear pitter-patter on the roof [tonight](datetime)?
+    - Will there be a need to dodge raindrops during my lunch break?
+    - Are the skies looking grey enough for a wet day?
+    - Is there a chance of getting my shoes wet [this afternoon](datetime)?
+    - Should I check for weather warnings about potential downpours?
+    - Will the football field be soggy for the game [this evening](datetime)?
+    - Are the birds chirping less, hinting at wet weather?
+    - Is the humidity hinting at a possible shower?
+    - Should I expect slippery roads on my commute?
+    - Will the weather be conducive for a rainbow sighting?
+    - Are we in for a soaking [this afternoon](datetime)?
+    - Is it likely that I'll need boots for a muddy walk?
+    - Can we expect the flowers to get their natural shower [today](datetime)?
+    - Will the ducks be enjoying the weather at the park?
+    - Should I anticipate the sound of rain against my window?
+    - Is there a likelihood of cancelling the beach trip due to wet conditions?
+    - Will there be a gentle drizzle or a torrential downpour?
+    - Are we expecting any sudden showers interrupting the sunny spell?
+    - Will the outdoor concert face a risk of getting washed out?
+    - Is there a hint of moisture in the air suggesting rain?
+    - Should I prepare for muddy puddles during my walk?
+    - Will the roads be slick with rain [this morning](datetime)?
+    - Is it a good day to leave the umbrella at home?
+    - Are we looking at a chance of rain during the parade?
+    - Will the weather dampen our plans for a barbecue?
+    - Is there a risk of a deluge during my commute?
+    - Should I expect a splashy surprise [tonight](datetime)?
+    - Will the farmers be happy with the weather [today](datetime)?
+    - Are we expecting a light sprinkle or a heavy shower?
+    - Will the skies open up and pour [this afternoon](datetime)?
+    - Is there a likelihood of a wet surprise on my evening jog?
+    - Should I anticipate raindrops during my morning walk?
+    - Are the clouds gathering for a rainy day?
+    - Will my washing get wet if I leave it outside?
+    - Should I expect to see rainbows after the showers?
+    - Will the cricket match be disrupted by wet weather?
+    - Is it a good day for those who love dancing in the rain?
+    - Are we looking at a potential washout for the festival?
+    - Will the kids have fun in puddles [this afternoon](datetime)?
+    - Is it a good day to test my new raincoat?
+    - Should I be on the lookout for a sudden cloudburst?
+    - Will the garden party need a tent for shelter?
+    - Is it advisable to postpone the painting job outside?
+    - Should I expect a wet commute [tomorrow morning](datetime)?
+    - Will there be a need to reschedule the soccer match?
+    - Are we expecting the kind of weather that makes ducks happy?
+    - Is it a day to look out for snails enjoying the wetness?
+    - Will there be a refreshing shower to clear the air?
+    - Are we in for a surprise from the clouds?
+    - Should I prepare for a change in plans due to a wet forecast?
+    - Is it likely that I'll be splashing through puddles [today](datetime)?
+
+- intent: ask_wind
+  examples: |
+    - Will the wind affect my travel plans today?
+    - I'm wondering about the wind conditions for sailing [this weekend](datetime).
+    - Is the wind strong enough for flying kites [this afternoon](datetime)?
+    - What is the forecast for wind gusts today?
+    - Can you provide the wind forecast for the next few days?
+    - How strong are the winds right now?
+    - Will the wind pick up by the [afternoon](datetime)?
+    - Is the wind strong enough for windsurfing today?
+    - Are we expecting calm winds today?
+    - What's the wind forecast for [the weekend](datetime)?
+    - Can you tell me if it's windy outside?
+    - Will the winds be gentle or strong today?
+    - Is there a wind advisory in effect?
+    - How are the wind conditions for flying a drone?
+    - Will the wind affect my [morning](datetime) jog?
+    - Are the winds favorable for sailing today?
+    - Is it too windy for a picnic?
+    - What is the wind direction today?
+    - Will there be strong gusts of wind [this evening](datetime)?
+    - Can you give me the wind speed forecast for today?
+    - Is the wind going to calm down by [night](datetime)?
+    - Are gusty conditions expected today?
+    - How is the wind affecting the current temperature?
+    - Will the wind chill make it feel colder?
+    - Is the wind speed increasing throughout the day?
+    - Will it storm today?
+    - Will a tornado hit my town today?
+    - Is there a chance of a hurricane at [Cuxhaven](place) this weekend?
+    - Is there any tornado risk in [Cottbus](place) [tomorrow](datetime)?
+    - Do I have to wear a wind-proof jacket outside?
+    - Is it too windy for a walk in [Hannover](place)?
+    - Will the wind be strong enough for a kite in [Dortmund](place) [tomorrow](datetime)?
+    - Is it too windy for a bike ride in [Duisburg](place) [tomorrow](datetime)?
+    - Are there any chances of a storm in [Leipzig](place) [tomorrow](datetime)?
+    - Is it a good day for flying kites at the park?
+    - Will the breeze interfere with my beach plans [today](datetime)?
+    - Can I expect gusty conditions for my golf game [this afternoon](datetime)?
+    - Is the air still enough for a barbecue [tonight](datetime)?
+    - Will the blustery conditions affect my commute [this morning](datetime)?
+    - Are the currents strong enough for paragliding [today](datetime)?
+    - Is the breeze gentle for an evening stroll?
+    - Can we expect a windy day for our boat trip [tomorrow](datetime)?
+    - Will my flight experience turbulence due to strong air currents?
+    - Is it too breezy for outdoor painting [this afternoon](datetime)?
+    - How's the air movement for a rooftop party [tonight](datetime)?
+    - Are conditions calm enough for a cycling tour?
+    - Will the strong gusts impact the open-air market?
+    - Can I expect a tranquil atmosphere for my outdoor yoga session?
+    - Is it too blustery for a picnic in the park [today](datetime)?
+    - Will the kites get enough lift at the festival [this weekend](datetime)?
+    - Are we expecting conditions ideal for windsurfing?
+    - Is the breeze too strong for a comfortable hike?
+    - How will the air currents affect sailing conditions [tomorrow](datetime)?
+    - Will the zephyr be strong enough for wind chimes [tonight](datetime)?
+    - Is the air still enough for a peaceful night of camping?
+    - Are we expecting a windy day for our trip to the beach?
+    - Is the gusty weather suitable for a kite festival [this afternoon](datetime)?
+    - Will the wind make it difficult to walk outside?
+    - How are the wind conditions for an outdoor film screening?
+    - Is it calm enough for a serene day in the garden?
+    - Will the gusts be strong for a wind turbine demonstration?
+    - Can I expect a breezy day for flying my model airplane?
+    - Are the winds favorable for a hot air balloon ride?
+    - Is the airflow strong enough to dry my laundry outside?
+    - Will the breezes disrupt the outdoor concert [tonight](datetime)?
+    - Is it too gusty for a rooftop dinner [this evening](datetime)?
+    - How will the wind affect the surf conditions [today](datetime)?
+    - Will the air be calm enough for a smooth boat ride?
+    - Are conditions windy enough for energy generation by turbines?
+    - Is it a good day for a windmill visit?
+    - Will the breezes be favorable for a glider flight?
+    - Can I expect a windy scenario for a beach volleyball game?
+    - Is the gust strength suitable for a sailboat race?
+    - Will the air movement be conducive for a pleasant day at the zoo?
+    - Are we expecting a calm or a windy day at the resort?
+    - Is the breeze mild enough for a peaceful day of fishing?
+    - Will the wind conditions be suitable for a day of bird watching?
+    - Can I expect a breezy afternoon for my outdoor workshop?
+    - Is the wind chill factor significant today?
+    - Will the air currents be strong enough for hang gliding?
+    - How are the breezes for a frisbee game in the park?
+    - Is the wind too strong for setting up a tent?
+    - Can I expect calm conditions for my photography session [this morning](datetime)?
+    - Will the gusts affect the hot air balloon festival?
+    - Is it too windy for a peaceful day at the spa retreat?
+    - Will the air flow be gentle for a day at the flower show?
+    - Are we expecting a blustery day for the marathon [tomorrow](datetime)?
+    - Is the breeze suitable for an outdoor art exhibition?
+    - Can I plan a kite-flying contest without worrying about the wind?
+    - Will the wind be a factor in today's cricket match?
+    - Is it a good day for a wind-powered boat race?
+    - How will the breezes affect the outdoor theater performance?
+    - Is the wind gentle enough for a relaxing day at the beach?
+    - Can we expect strong gusts for the kite surfing competition?
+    - Is it calm enough for a smooth sailing trip [this weekend](datetime)?
+    - Will the air currents be favorable for a paragliding adventure?
+    - Are the wind conditions right for an outdoor music festival?
+    - Is the gust strength suitable for a wind energy workshop?
+    - Can I expect a breezy evening for my rooftop event?
+    - How's the wind for an afternoon of flying drones?
+    - Will the winds be strong enough to affect outdoor sculptures?
+    - Is it too gusty for a leisurely walk in the city?

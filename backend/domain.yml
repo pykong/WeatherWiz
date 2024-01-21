@@ -1,0 +1,87 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - thank_you
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_condition
+  - ask_temperature
+  - ask_rain
+  - ask_wind
+
+entities:
+  - datetime
+  - place
+
+slots:
+  datetime:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: datetime
+  place:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: place
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_you_are_welcome:
+   - text: "You're welcome!"
+
+  # weather responses
+  utter_time_in_future:
+   - text: "Sorry, I can't predict the weather more than {horizon} days into the future."
+  utter_time_in_past:
+   - text: "Sorry, I can't tell the weather in the past, earlier than {horizon}."
+
+  utter_place_missing:
+   - text: "Sorry, I couldn't find the weather, as place is missing."
+  utter_weather_past:
+   - text: "It was {info} on {date} in {place}."
+   - text: "On {date}, it was {info} in {place}."
+   - text: "In {place}, it was {info} on {date}."
+  utter_weather_present:
+    - text: "It is {info} in {place} today."
+    - text: "Today, it is {info} in {place}."
+    - text: "In {place}, it is {info} today."
+  utter_weather_future:
+    - text: "It will be {info} on {date} in {place}."
+    - text: "On {date}, it will be {info} in {place}."
+    - text: "In {place}, it will be {info} on {date}."
+
+actions:
+  - action_provide_condition
+  - action_provide_temperature
+  - action_provide_rain
+  - action_provide_wind
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false

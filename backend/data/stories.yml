@@ -1,0 +1,301 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: basic weather inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: basic weather inquiry with thanks
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: thank_you
+  - action: utter_you_are_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: temperature specific inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_temperature
+  - action: action_provide_temperature
+  - intent: thank_you
+  - action: utter_you_are_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: weather condition inquiry
+  steps:
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: ask_temperature
+  - action: action_provide_temperature
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: wind inquiry with follow-up
+  steps:
+  - intent: ask_wind
+  - action: action_provide_wind
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: extended weather conversation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: ask_wind
+  - action: action_provide_wind
+  - intent: ask_temperature
+  - action: action_provide_temperature
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: unscheduled weather inquiry
+  steps:
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: thank_you
+  - action: utter_you_are_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: brief weather check
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_temperature
+  - action: action_provide_temperature
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask rain
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_rain
+  - action: action_provide_rain
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask rain with thanks
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_rain
+  - action: action_provide_rain
+  - intent: thank_you
+  - action: utter_you_are_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask rain then wind
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_rain
+  - action: action_provide_rain
+  - intent: ask_wind
+  - action: action_provide_wind
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask temperature then rain
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_temperature
+  - action: action_provide_temperature
+  - intent: ask_rain
+  - action: action_provide_rain
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask temperature then rain then wind
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_temperature
+  - action: action_provide_temperature
+  - intent: ask_rain
+  - action: action_provide_rain
+  - intent: ask_wind
+  - action: action_provide_wind
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: quick temperature check
+  steps:
+  - intent: ask_temperature
+  - action: action_provide_temperature
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: detailed weather inquiry
+  steps:
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: ask_temperature
+  - action: action_provide_temperature
+  - intent: ask_wind
+  - action: action_provide_wind
+  - intent: thank_you
+  - action: utter_you_are_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: rain forecast inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_rain
+  - action: action_provide_rain
+  - intent: ask_wind
+  - action: action_provide_wind
+  - intent: thank_you
+  - action: utter_you_are_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: casual weather check
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: morning weather routine
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: thank_you
+  - action: utter_you_are_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: weather update request
+  steps:
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: ask_wind
+  - action: action_provide_wind
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: weather planning for event
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: affirm
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: quick wind check
+  steps:
+  - intent: ask_wind
+  - action: action_provide_wind
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: complete weather overview
+  steps:
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: ask_temperature
+  - action: action_provide_temperature
+  - intent: ask_wind
+  - action: action_provide_wind
+  - intent: ask_rain
+  - action: action_provide_rain
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: temperature and wind follow-up
+  steps:
+  - intent: ask_temperature
+  - action: action_provide_temperature
+  - intent: ask_wind
+  - action: action_provide_wind
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: temperature and rain check
+  steps:
+  - intent: ask_temperature
+  - action: action_provide_temperature
+  - intent: ask_rain
+  - action: action_provide_rain
+  - intent: thank_you
+  - action: utter_you_are_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: multi-step weather inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_temperature
+  - action: action_provide_temperature
+  - intent: ask_rain
+  - action: action_provide_rain
+  - intent: ask_wind
+  - action: action_provide_wind
+  - intent: ask_condition
+  - action: action_provide_condition
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: wind concern before outing
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_wind

@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  actions:
+    build:
+      context: ./
+      dockerfile: ./actions/Dockerfile
+    ports:
+      - 5055:5055
+
+  backend:
+    build:
+      context: ./
+      dockerfile: ./backend/Dockerfile
+    user: root
+    ports:
+      - 5005:5005
+    depends_on:
+      - actions
+
+  frontend:
+    build:
+      context: ./
+      dockerfile: ./frontend/Dockerfile
+    ports:
+      - 8000:8000
+    depends_on:
+      - backend

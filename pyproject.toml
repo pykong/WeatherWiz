@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "WeatherWiz"
+version = "0.1.0"
+description = "A chatbot for conversational weather forecasts."
+authors = ["Ben Felder <benjamin.felder@iubh.de>"]
+license = "MIT"
+# packages = [{ include = "actions" }, { include = "backend" }]
+
+[tool.poetry.dependencies]
+python = "^3.10, <3.11"
+rasa = { version = "^3.6" }
+dateparser = "^1.2.0"
+requests = "^2.31.0"
+loguru = "^0.7.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+ruff = "*"
+mypy = "*"
+deptry = "*"
+vulture = "*"
+types-requests = "^2.31.0.10"
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+# https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-format
+line-length = 88
+target_version = ["py310"]
+
+[tool.ruff]
+# https://pypi.org/project/ruff/
+line-length = 88
+target-version = "py310"
+ignore = ["E402", "F841", "F401"]
+src = ["actions", "backend"]
+
+[tool.ruff.isort]
+# https://beta.ruff.rs/docs/settings/#isort
+# https://beta.ruff.rs/docs/faq/#how-does-ruffs-import-sorting-compare-to-isort
+known-local-folder = ["actions", "backend"]
+
+[tool.mypy]
+# https://mypy.readthedocs.io/en/stable/config_file.html#example-pyproject-toml
+# disallow_untyped_calls = true
+# disallow_untyped_decorators = true
+# disallow_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_subclassing_any = true
+ignore_missing_imports = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = true
